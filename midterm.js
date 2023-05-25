@@ -31,12 +31,12 @@
 /* conditionals */
 /რას ეწოდება კოდის ბლოკი (code block)?/;
 
-let age = 19; 
-if (age < 18)  {
-   // block code
-   console.log('You cannot enter!');
+let age = 19;
+if (age < 18) {
+  // block code
+  console.log('You cannot enter!');
 } else {
-   console.log('You may enter');
+  console.log('You may enter');
 }
 
 
@@ -47,13 +47,13 @@ if (age < 18)  {
 // else: პირობა შესრულდება თუ ყველა წინა პირობა იქნება მცდარი ანუ (false).
 let time = 18;
 if (time < 10) {
-   greeting = "Good morning";
- } else if (time < 20) {
-   greeting = "Good day";
- } else {
-   greeting = "Good evening"; 
- }
- console.log(greeting); /*Output Good day*/
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+console.log(greeting); /*Output Good day*/
 
 //  /როგორ მუშაობს: [და, ან, არა] ოპერატორები (and, or, not)?/;
 
@@ -67,19 +67,48 @@ console.log(a && b); // Output false
 // ან (||) ოპერატორი: || ოპერატორი აბრუნებს true, თუ რომელიმე ოპერანდი არის true, და false, თუ ორივე ოპერანდი არის false.
 //   თუ პირველი ოპერანდი ჭეშმარიტია (true), მეორე ოპერანდი არ ფასდება, რადგან საერთო შედეგი ყოველთვის იქნება ჭეშმარიტი (true).
 
-console.log(a || b);  // Output: true
+console.log(a || b); // Output: true
 
 // არა (!) ოპერატორი: ! ოპერატორი არის ერთიანი ოპერატორი, რომელიც აბრუნებს თავისი ოპერანდის მნიშვნელობას.
 //  თუ ოპერანდი არის true, ის აბრუნებს false-ს, ხოლო თუ ოპერანდი არის false, ის აბრუნებს true.
 
-console.log(!a);  // Output: false
+console.log(!a); // Output: false
 
-console.log(!b);  // Output: true
-
-
+console.log(!b); // Output: true
 
 
 
+/როგორ მუშაობს switch (case და default)?/;
+//  როგორც მივხვდი switch არის if else მოდიფიკაცია რომლითაც ბევრი შედარების გაკეთება არის შესაძლებელი.
+//  მაგალითად:
+const num = 50;
+switch (num) {
+  case 49:
+    console.log('Error!');
+    break;
+  case 100:
+    console.log('Error!');
+    break;
+  case 50:
+    console.log('OK!');
+    break;
+    default:
+      console.log('Not Now!');
+}
 
 
+
+let day = 'Monday';
+switch (day) {
+  case 'Monday':
+    console.log('It\'s Monday!');
+    break;
+  case 'Tuesday':
+    console.log('It\'s Tuesday!');
+    break;
+  default:
+    console.log('It\'s another day of the week.');
+}
+
+// default გამოიყენება იმ შემთხვევაში თუ არცერთი პირობა არ შესრულდა შესრულდება default-ში მოცემული პირობა ..
 
