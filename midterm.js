@@ -112,3 +112,33 @@ switch (day) {
 
 // default გამოიყენება იმ შემთხვევაში თუ არცერთი პირობა არ შესრულდა შესრულდება default-ში მოცემული პირობა ..
 
+/* array */
+/ახსენით რა არის და რისთვის გამოიყენება მონაცემთა სტრუქტურები (data structures)?/;
+
+
+/რა არის მასივი (array)?/;
+//მასივი (array) არის მონაცემთა სტრუქტურა, რომელიც გამოიყენება ბევრი ელემენტების შესანახად ერთ ცვლადში.
+
+let cars = [
+  'Bmw', 'Mercedes', 'Toyota', 'Lexus'
+];
+// ყველა ელემენტს აქვს ინდექსი,ინდექსები JavaScript მასივებში იწყება 0-დან, რაც ნიშნავს, რომ პირველი ელემენტი არის ინდექსში 0, მეორე 1 და ა.შ.
+  console.log(cars[3]); //Output Lexus
+
+cars.push('Honda');
+  console.log(cars);    //Output ['Bmw', 'Mercedes', 'Toyota', 'Lexus', 'Honda'] ამატებს ელემენტს ბოლოში
+
+  cars.pop();
+  console.log(cars);   //Output ['Bmw', 'Mercedes', 'Toyota', 'Lexus'] შლის ბოლო ელემენტს 
+
+  cars.shift();
+  console.log(cars);   //Output ['Mercedes', 'Toyota', 'Lexus']  შლის პირველ ელემენტს
+
+  cars.unshift('Lamborghini');
+  console.log(cars);   //Output ['Lamborghini', 'Mercedes', 'Toyota', 'Lexus'] ამატებს ელემენტს თავში
+
+cars[3] = 'Ferrari';
+console.log(cars); //Output  ['Lamborghini', 'Mercedes', 'Toyota', 'Ferrari'] ელემენტის ჩანაცვლება
+
+cars.splice(2, 1);
+console.log(cars); // Output ['Lamborghini', 'Mercedes', 'Ferrari'] წავშალე პირველი ელემენტი ათვლა დავიწყე მე2 ინდექსიდან
